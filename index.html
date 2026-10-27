@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="kk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>SPORTMIX Aktau | Спорттық киімдер мен кроссовкалар дүкені | 17 мкр ЖК Ақ Жайық</title>
+  <meta name="description" content="SPORTMIX Aktau — Ақтау қаласындағы ерлер мен жастарға арналған сапалы спорттық костюмдер, кроссовкалар, худи және фитнес киімдер дүкені. 17 мкр, 18, ЖК Ақ Жайық.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- RUNNING LINE -->
+  <div class="top-bar">
+    <div class="ticker-wrap">
+      <div class="ticker-move">
+        <span>⚡ SPORTMIX AKTAU — СПОРТТЫҚ КИІМДЕР МЕН КРОССОВКАЛАР ⚡ 17 МКР, 18, ЖК АҚ ЖАЙЫҚ ⚡ АҚТАУ БОЙЫНША 1 САҒАТТА ТЕЗ ЖЕТКІЗУ ⚡ KASPI RED / QR 0-0-12 ⚡ WHATSAPP: +7 778 591 75 59 ⚡</span>
+        <span>⚡ SPORTMIX AKTAU — СПОРТТЫҚ КИІМДЕР МЕН КРОССОВКАЛАР ⚡ 17 МКР, 18, ЖК АҚ ЖАЙЫҚ ⚡ АҚТАУ БОЙЫНША 1 САҒАТТА ТЕЗ ЖЕТКІЗУ ⚡ KASPI RED / QR 0-0-12 ⚡ WHATSAPP: +7 778 591 75 59 ⚡</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-sport">SPORT</span><span class="logo-mix">MIX</span>
+        <span class="city-badge">AKTAU</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#catalog" class="nav-link" data-i18n="nav_catalog">Каталог</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Дүкен жайлы</a>
+        <a href="#delivery" class="nav-link" data-i18n="nav_delivery">Жеткізу & Төлем</a>
+        <a href="#location" class="nav-link" data-i18n="nav_contacts">Мекенжай & 2GIS</a>
+      </nav>
+
+      <div class="header-right">
+        <!-- Language Switcher -->
+        <div class="lang-box">
+          <button class="lang-btn active" id="btnKz" onclick="setLanguage('kk')">KZ</button>
+          <span>/</span>
+          <button class="lang-btn" id="btnRu" onclick="setLanguage('ru')">RU</button>
+        </div>
+
+        <!-- Size Guide -->
+        <button class="btn-icon" onclick="openSizeModal()" title="Өлшем калькуляторы">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="btn-cart" onclick="openCart()" aria-label="Себет">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-btn" id="mobileMenuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span class="tag-live"></span>
+          <span>ЖАҢА СПОРТТЫҚ ТОПТАМА 2026</span>
+        </div>
+        <h1 class="hero-heading">
+          СПОРТ ПЕН СТИЛЬДІҢ <br>
+          <span class="highlight-neon">ҮЗДІК ҮЙЛЕСІМІ</span> <br>
+          АҚТАУДА
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">
+          «SPORTMIX» — сапалы спорттық костюмдер, жүгіруге және күнделікті киіске арналған премиум кроссовкалар, желден қорғайтын ветровкалар мен аксессуарлар.
+        </p>
+
+        <!-- Quick highlights -->
+        <div class="hero-badges">
+          <div class="h-badge">
+            <i class="fa-solid fa-bolt text-neon"></i>
+            <span>1 сағатта жеткізу</span>
+          </div>
+          <div class="h-badge">
+            <i class="fa-solid fa-qrcode text-neon"></i>
+            <span>Kaspi QR 0-0-12</span>
+          </div>
+          <div class="h-badge">
+            <i class="fa-solid fa-location-dot text-neon"></i>
+            <span>17 мкр, 18, ЖК Ақ Жайық</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-neon">
+            <i class="fa-solid fa-fire"></i>
+            <span data-i18n="hero_btn_cat">Каталогты таңдау</span>
+          </a>
+          <a href="https://wa.me/77785917559?text=Сәлеметсіз%20бе!%20SPORTMIX%20дүкенінен%20спорттық%20киімдерге%20тапсырыс%20бергім%20келеді" target="_blank" class="btn btn-wa">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp-қа жазу</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hot-badge">ХИТ САТЫЛЫМ 🔥</div>
+          <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=750&q=80" alt="Sportmix Sneakers" class="hero-product-img">
+          <div class="hero-card-meta">
+            <div class="h-name">SPORTMIX Ultra Boost Running Pro</div>
+            <div class="h-prices">
+              <span class="curr-price">23 500 ₸</span>
+              <span class="old-price">29 000 ₸</span>
+              <span class="sale-tag">-19%</span>
+            </div>
+            <button class="btn-quick-buy" onclick="orderWhatsAppDirect('SPORTMIX Ultra Boost Running Pro', '23 500 ₸', '42')">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp арқылы бірден алу
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="f-box">
+        <div class="f-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div>
+          <h4 data-i18n="f1_title">Тез Жеткізу</h4>
+          <p data-i18n="f1_desc">Ақтау қаласы бойынша тапсырыс берген соң 1 сағат ішінде есігіңізге дейін</p>
+        </div>
+      </div>
+      <div class="f-box">
+        <div class="f-icon"><i class="fa-solid fa-qrcode"></i></div>
+        <div>
+          <h4 data-i18n="f2_title">Kaspi QR & Төлем</h4>
+          <p data-i18n="f2_desc">Kaspi QR, Red, бөліп төлеу немесе жеткізгенде қолма-қол</p>
+        </div>
+      </div>
+      <div class="f-box">
+        <div class="f-icon"><i class="fa-solid fa-shirt"></i></div>
+        <div>
+          <h4 data-i18n="f3_title">Дүкенде киіп көру</h4>
+          <p data-i18n="f3_desc">17 мкр, 18-үй, ЖК «Ақ Жайық» (цокольный этаж) келіп киіп көруге болады</p>
+        </div>
+      </div>
+      <div class="f-box">
+        <div class="f-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+        <div>
+          <h4 data-i18n="f4_title">Өлшем ауыстыру</h4>
+          <p data-i18n="f4_desc">Өлшемі келмесе қиналмастан басқа өлшемге ауыстырып береміз</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG SECTION -->
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="sub-badge" data-i18n="cat_badge">SPORTMIX КАТАЛОГЫ</span>
+        <h2 class="main-title" data-i18n="cat_title">СПОРТТЫҚ ТАУАРЛАР ЖИЫНТЫҒЫ</h2>
+        <p class="main-desc" data-i18n="cat_desc">Қажетті санатты таңдаңыз немесе WhatsApp арқылы тапсырыс беріңіз</p>
+      </div>
+
+      <!-- Categories Filter Tabs -->
+      <div class="tabs-row">
+        <button class="filter-tab active" data-cat="all" onclick="filterCat('all')">
+          <i class="fa-solid fa-grip"></i> <span data-i18n="tab_all">Барлығы</span>
+        </button>
+        <button class="filter-tab" data-cat="suits" onclick="filterCat('suits')">
+          <i class="fa-solid fa-person-running"></i> <span data-i18n="tab_suits">Спорттық костюмдер</span>
+        </button>
+        <button class="filter-tab" data-cat="shoes" onclick="filterCat('shoes')">
+          <i class="fa-solid fa-shoe-prints"></i> <span data-i18n="tab_shoes">Кроссовкалар</span>
+        </button>
+        <button class="filter-tab" data-cat="jackets" onclick="filterCat('jackets')">
+          <i class="fa-solid fa-vest"></i> <span data-i18n="tab_jackets">Ветровкалар & Күртешелер</span>
+        </button>
+        <button class="filter-tab" data-cat="hoodies" onclick="filterCat('hoodies')">
+          <i class="fa-solid fa-shirt"></i> <span data-i18n="tab_hoodies">Худи & Свитшоттар</span>
+        </button>
+        <button class="filter-tab" data-cat="bags" onclick="filterCat('bags')">
+          <i class="fa-solid fa-bag-shopping"></i> <span data-i18n="tab_bags">Спорттық сөмкелер</span>
+        </button>
+      </div>
+
+      <!-- Search & Sorting -->
+      <div class="filter-controls">
+        <div class="search-input-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Тауар атауын немесе өлшемін іздеу..." oninput="handleSearch(this.value)">
+        </div>
+        <div class="sort-select-wrap">
+          <select id="sortSelect" onchange="handleSort(this.value)">
+            <option value="pop">Танымалдығы бойынша</option>
+            <option value="cheap">Бағасы: төменнен жоғарыға</option>
+            <option value="expensive">Бағасы: жоғарыдан төменге</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SIZE CALCULATOR PROMO -->
+  <section class="size-promo">
+    <div class="container">
+      <div class="size-card">
+        <div class="size-card-info">
+          <span class="size-tag"><i class="fa-solid fa-magic"></i> ДӘЛ ӨЛШЕМДІ ТАҢДАУ</span>
+          <h3>Өлшеміңізді білмейсіз бе?</h3>
+          <p>Бойыңыз бен салмағыңызды жазыңыз, смарт калькулятор SPORTMIX костюмдері мен кроссовкалары үшін дәл өлшемді тауып береді.</p>
+        </div>
+        <button class="btn btn-neon" onclick="openSizeModal()">
+          <i class="fa-solid fa-ruler"></i> Өлшемді есептеу
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & 2GIS MAP -->
+  <section class="location-section" id="location">
+    <div class="container location-grid">
+      <div class="loc-card">
+        <span class="sub-badge">БІЗДІҢ МЕКЕНЖАЙЫМЫЗ</span>
+        <h2 class="loc-title">SPORTMIX AKTAU ДҮКЕНІ</h2>
+
+        <div class="loc-list">
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="loc-meta">
+              <strong>Мекенжай:</strong>
+              <span>Ақтау қаласы, 17-шағын аудан, 18-үй, ЖК «Ақ Жайық» (цокольный этаж)</span>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="loc-meta">
+              <strong>Жұмыс уақыты:</strong>
+              <span>Күнделікті: 11:00 - 23:00 (Демалыссыз)</span>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="loc-meta">
+              <strong>WhatsApp / Телефон:</strong>
+              <span><a href="https://wa.me/77785917559" target="_blank">+7 (778) 591-75-59</a>, +7 (705) 460-65-10</span>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <div class="loc-meta">
+              <strong>Төлем тәсілдері:</strong>
+              <span>Kaspi QR, Kaspi Red, Банк карталары, Қолма-қол</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="loc-actions">
+          <a href="https://2gis.kz/aktau/firm/70000001050616021" target="_blank" class="btn btn-2gis">
+            <i class="fa-solid fa-map-location-dot"></i> 2GIS-тен маршрут салу
+          </a>
+          <a href="https://wa.me/77785917559?text=Сәлеметсіз%20бе!%20SPORTMIX%20дүкеніне%20қалай%20жетуге%20болады?" target="_blank" class="btn btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> Геолокация сұрау
+          </a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-header">
+          <span><i class="fa-solid fa-map-pin text-neon"></i> 17 мкр, 18, ЖК Ақ Жайық</span>
+          <span class="live-pill"><span class="dot"></span> Дүкен Ашық</span>
+        </div>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.869038289768!2d51.138765!3d43.671509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41b433b93f18544d%3A0xc3cf338efbc062ba!2zMTct0Lkg0LzQuNC60YDQvtGA0LDQudC-0L0gMTgsINCQ0LrRgtCw0YMsIE1hbmd5c3RhdSBSZWdpb24sIEthemFraHN0YW4!5e0!3m2!1sen!2skz!4v1710000000000!5m2!1sen!2skz" 
+          width="100%" 
+          height="380" 
+          style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg) contrast(95%);" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SLIDE-OVER DRAWER -->
+  <div class="cart-backdrop" id="cartBackdrop" onclick="closeCart()"></div>
+  <aside class="cart-slideover" id="cartSlideover">
+    <div class="cart-head">
+      <div class="cart-head-title">
+        <i class="fa-solid fa-bag-shopping text-neon"></i>
+        <span>Тапсырыс Себеті</span>
+      </div>
+      <button class="btn-close" onclick="closeCart()">&times;</button>
+    </div>
+
+    <div class="cart-content" id="cartItemsContainer">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="cart-foot">
+      <div class="cart-total-row">
+        <span>Барлығы:</span>
+        <span class="cart-total-val" id="cartTotalVal">0 ₸</span>
+      </div>
+      <p class="cart-note"><i class="fa-solid fa-truck text-neon"></i> Ақтау бойынша 1 сағатта жеткізу немесе 17 мкр-ден алып кету</p>
+      <button class="btn btn-wa btn-full" onclick="checkoutViaWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp арқылы тапсырыс беру
+      </button>
+      <button class="btn btn-kaspi btn-full" onclick="openKaspiModal()">
+        <i class="fa-solid fa-qrcode"></i> Kaspi QR арқылы төлеу
+      </button>
+    </div>
+  </aside>
+
+  <!-- SIZE CALCULATOR MODAL -->
+  <div class="modal" id="sizeModal">
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeSizeModal()">&times;</button>
+      <div class="modal-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+      <h3>Ақылды Өлшем Калькуляторы</h3>
+      <p>Дәл өлшемді табу үшін бойыңыз бен салмағыңызды енгізіңіз:</p>
+      
+      <div class="calc-inputs">
+        <div class="c-group">
+          <label>Бойыңыз (см):</label>
+          <input type="number" id="userHeight" placeholder="176" value="175">
+        </div>
+        <div class="c-group">
+          <label>Салмағыңыз (кг):</label>
+          <input type="number" id="userWeight" placeholder="72" value="70">
+        </div>
+      </div>
+      <button class="btn btn-neon btn-full" onclick="calculateSize()">
+        <i class="fa-solid fa-bolt"></i> Өлшемді есептеу
+      </button>
+
+      <div class="calc-result" id="calcResult" style="display:none;">
+        <div class="cr-label">ҰСЫНЫЛАТЫН ӨЛШЕМ:</div>
+        <div class="cr-size" id="resSize">L (50)</div>
+        <p class="cr-note" id="resNote">SPORTMIX спорттық костюмдеріне мінсіз сәйкес келеді.</p>
+        <button class="btn btn-outline btn-full" onclick="closeSizeModal()">Каталогтан таңдау</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- KASPI QR MODAL -->
+  <div class="modal" id="kaspiModal">
+    <div class="modal-box text-center">
+      <button class="modal-x" onclick="closeKaspiModal()">&times;</button>
+      <div class="kaspi-title">
+        <span class="k-red">Kaspi.kz</span>
+        <span class="k-tag">QR ТӨЛЕМ</span>
+      </div>
+      <p>Kaspi қосымшасын ашып, төмендегі QR-кодты сканерлеңіз:</p>
+      <div class="qr-wrap">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://wa.me/77785917559?text=Sportmix-Order" alt="Kaspi QR" class="qr-code">
+      </div>
+      <div class="kaspi-sum">
+        <span>Төлем сомасы:</span>
+        <strong id="kaspiTotal">0 ₸</strong>
+      </div>
+      <p class="kaspi-sub">Төлемнен кейін чекті WhatsApp-қа жіберіңіз:</p>
+      <a href="https://wa.me/77785917559" target="_blank" class="btn btn-wa btn-full">
+        <i class="fa-brands fa-whatsapp"></i> Чекті жіберу (+7 778 591 75 59)
+      </a>
+    </div>
+  </div>
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="mobile-bar">
+    <a href="https://wa.me/77785917559?text=Сәлеметсіз%20бе!%20SPORTMIX%20дүкенінен%20киім%20таңдауға%20кеңес%20беріңізші" target="_blank" class="mb-wa">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp Чат
+    </a>
+    <button class="mb-cart" onclick="openCart()">
+      <i class="fa-solid fa-cart-shopping"></i> Себет (<span id="mobileCartCount">0</span>)
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <span class="logo-sport">SPORT</span><span class="logo-mix">MIX</span>
+          <span class="city-badge">AKTAU</span>
+        </div>
+        <p class="footer-desc">Ақтау қаласындағы ерлер мен жастарға арналған сапалы спорттық киімдер мен кроссовкалар дүкені.</p>
+        <div class="footer-contacts">
+          <p><i class="fa-solid fa-location-dot text-neon"></i> 17 мкр, 18-үй, ЖК «Ақ Жайық»</p>
+          <p><i class="fa-solid fa-phone text-neon"></i> +7 (778) 591-75-59</p>
+          <p><i class="fa-solid fa-clock text-neon"></i> 11:00 - 23:00 (күн сайын)</p>
+        </div>
+      </div>
+      <div>
+        <h4>Санаттар</h4>
+        <ul class="f-links">
+          <li><a href="#catalog" onclick="filterCat('suits')">Спорттық костюмдер</a></li>
+          <li><a href="#catalog" onclick="filterCat('shoes')">Кроссовкалар</a></li>
+          <li><a href="#catalog" onclick="filterCat('jackets')">Ветровкалар & Күртешелер</a></li>
+          <li><a href="#catalog" onclick="filterCat('hoodies')">Худи & Свитшоттар</a></li>
+          <li><a href="#catalog" onclick="filterCat('bags')">Спорттық сөмкелер</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Байланыс & Сервис</h4>
+        <ul class="f-links">
+          <li><a href="https://wa.me/77785917559" target="_blank">WhatsApp желісі</a></li>
+          <li><a href="https://2gis.kz/aktau/firm/70000001050616021" target="_blank">2GIS Картасы</a></li>
+          <li><a href="javascript:void(0)" onclick="openSizeModal()">Өлшем анықтау</a></li>
+          <li><a href="#location">Жеткізу шарттары</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div class="container footer-copy-inner">
+        <p>© 2026 SPORTMIX Aktau. Барлық құқықтар қорғалған.</p>
+        <p class="neon-text">Powered by Sportmix E-Commerce</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
